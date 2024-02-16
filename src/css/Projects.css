@@ -1,0 +1,82 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.projects .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.projects h4 {   
+    font-weight: normal;
+}
+.projects .team {
+    min-height: 80px;
+}
+.projects .team a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.projects .team a:nth-child(2) {
+    left: 25px;
+}
+.projects .team a:nth-child(3) {
+    left: 50px;
+}
+.projects .team a:nth-child(4) {
+    left: 75px;
+}
+.projects .team a:nth-child(5) {
+    left: 100px;
+}
+.projects .team a:hover {
+    z-index: 1000;
+}
+.projects .team img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+}
+.project .do {
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+}
+.project .do span {
+    padding: 3px 8px;
+    width: fit-content;
+}
+
+.project .info {
+    border-top: 1px solid #eee;
+}
+.project .info .prog {
+    height: 8px;
+    width: 260px;
+    position: relative;
+}
+.project .info .prog span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+@media (max-width: 767px) {
+    .projects {
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 0 10px;
+        gap: 10px;
+    }
+    .project .do {
+        flex-direction: column;
+    }
+    .project .do span:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .project .info  {
+        flex-direction: column;
+    }
+    .project .info .prog {
+        margin-bottom: 15px;
+    }
+}

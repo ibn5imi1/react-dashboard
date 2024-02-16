@@ -1,0 +1,38 @@
+/* start friend box */
+.friends {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.friends .friend .contact {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.friends .friend .contact-icon:hover {
+    background-color: #0075ff;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .friends {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+/* end friend box */
+
+/* start icons box */
+.friends .friend .icons {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.friends .friend .icons .vib {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    font-size: 40px;
+    opacity: 0.2;
+}
+/* end icons box */

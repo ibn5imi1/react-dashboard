@@ -1,0 +1,40 @@
+.courses {
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+}
+@media (max-width: 767px) {
+    .courses {
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 0 10px;
+        gap: 10px;
+    }
+}
+.courses .course {
+    overflow: hidden;
+}
+.courses .course .cover {
+    max-width: 100%;
+}
+.courses .course .instructor {
+    overflow: hidden;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 20px;
+    left: 20px;
+    border: 2px solid white;
+}
+.courses .course .info {
+    border-top: 1px solid #eee;
+}
+.courses .course .info .title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    font-size: 12px;
+    top: -14px;
+    height: 26px;
+}

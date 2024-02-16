@@ -1,0 +1,113 @@
+/* start avatar box */
+.profile .avatar-box {
+    width: 300px;
+}
+.profile .avatar-box > img {
+    width: 120px;
+    height: 120px;
+}
+.profile .avatar-box .level {
+    height: 6px;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+}
+.profile .avatar-box .level span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #0075ff;
+}
+@media (min-width: 767px) {
+    .profile .avatar-box {
+        border-right: 1px solid #eee;
+    }
+}
+@media (max-width: 767px) {
+    .overview {
+        flex-direction: column;
+    }
+}
+/* end avatar box */
+
+/* start info box */
+.info-box .box {
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+}
+.info-box .box:hover {
+    background-color: #f6f6f6
+}
+.info-box .box > div {
+    min-width: 200px;
+    padding: 10px 0 0;
+}
+.info-box .box h4 {
+    font-weight: normal;
+}
+/* end info box */
+
+/* start skills card box */
+@media (max-width: 767px) {
+    .other-data {
+        flex-direction: column;
+    }
+}
+.skills-card {
+    flex-grow: 1;
+}
+.skills-card ul li {
+    padding: 15px 0;
+}
+.skills-card ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.skills-card ul li  span {
+    display: inline-flex;
+    padding: 4px 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 14px;
+}
+.skills-card ul li span:not(:last-child) {
+    margin-right: 5px;
+}
+.activities-card {
+    flex-grow: 2;
+}
+/* end skills card box */
+
+/* start activities card box */
+.activities-card .activity:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.activities-card .activity img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+@media (min-width: 768px) {
+    .activities-card .activity .date {
+        margin-left: auto;
+        text-align: right;
+    }
+}
+@media (max-width: 767px) {
+    .activities-card .activity {
+        flex-direction: column;
+    }
+    .activities-card .activity img {
+        margin: 0 0 15px;
+    }
+    .activities-card .activity .date {
+        margin: 15px 0 0 0;
+    }
+}
+/* end activities card box */

@@ -1,0 +1,201 @@
+.settings {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+    .settings {
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 0 10px;
+        gap: 10px;
+    }
+}
+
+/* start Site Control box */
+.close-message {
+    resize: none;
+    min-height: 150px;
+}
+/* end Site Control box */
+
+/* start General Info box */
+.general-info input#email {
+    display: inline-flex;
+    background-color: #f0f4f8;
+    width: calc(100% - 80px);
+    cursor: not-allowed;
+}
+/* end General Info box */
+
+/* start Security Info box */
+.security-info .security-box:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+/* end Security Info box */
+
+/* start Social Info box */
+.social-info {
+    background-color: #f7f7f7;
+}
+.social-info img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -ms-border-radius: 6px 0 0 6px;
+    -o-border-radius: 6px 0 0 6px;
+}
+.social-info input {
+    height: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    -o-border-radius: 0 6px 6px 0;
+}
+/* end Social Info box */
+
+/* start Widgets Control box */
+.widgets-control .control label {
+    padding-left: 30px;
+}
+.widgets-control .control label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border: 2px solid black;
+    margin-top: -9px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.widgets-control .control label:hover::before {
+    border-color: #0d69d5;
+}
+.widgets-control .control label::after {
+    content: "\2713";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -9px;
+    background-color: #0075ff;
+    color: #fff;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.widgets-control .control input[type=checkbox]:checked + label::after {
+    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+    -moz-transform: scale(1) rotate(360deg);
+    -ms-transform: scale(1) rotate(360deg);
+    -o-transform: scale(1) rotate(360deg);
+}
+.widgets-control .control input[type=checkbox] {
+    appearance: none;
+}
+/* end Widgets Control box */
+
+/* start Backup Manager box */
+.backup-manager input[type="radio"] {
+    appearance: none;
+}
+.backup-manager .date label {
+    padding-left: 30px;
+}
+.backup-manager .date label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.backup-manager .date label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: #0075ff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+.backup-manager .date input[type="radio"]:checked + label::before { 
+    border-color: #0075ff;
+}
+.backup-manager .date input[type="radio"]:checked + label::after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.servers {
+    border-top : 1px solid #eee;
+}
+.servers .server {
+    border: 2px solid #eee;
+}
+.servers .server label {
+
+}
+.servers input[type="radio"]:checked + .server {
+    border-color: #0075ff;
+    color: #0075ff;
+}
+@media (max-width: 767px) {
+    .servers {
+        flex-wrap: wrap;
+    }
+}
+/* end Backup Manager box */

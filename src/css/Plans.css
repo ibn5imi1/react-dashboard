@@ -1,0 +1,53 @@
+.plans {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+.plan {
+    
+}
+.plan .top {
+    border: 3px solid white;
+    outline: 3px solid transparent;
+}
+.plan.green .top {
+    outline-color: #22c55e;
+}
+.plan.blue .top {
+    outline-color: #0075ff;
+}
+.plan.orange .top {
+    outline-color: #f59e0b;
+}
+.plan .price {
+    font-size: 40px;
+}
+.plan .price sup {
+    font-size: 25px;
+}
+.plan ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+.plan ul li .i:first-child {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.plan ul li .i.help {
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .plans {
+        grid-template-columns: minmax(250px, 1fr);
+        gap: 10px;
+        margin: 0 10px;
+    }
+}
